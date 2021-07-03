@@ -45,3 +45,35 @@ function circulo(radio, medida)
 }
 
 console.groupEnd();
+
+
+
+//Creadas
+function perimetro_cuadrado(lado)
+{
+    let perimetro = lado * 4;
+    return perimetro;
+}
+function area_cuadrado(lado)
+{
+    let area = lado * lado;
+    return area;
+}
+
+// Interactuamos con el html
+function calcularPerimetroCuadrado()
+{
+    let input = document.getElementById("input-cuadrado");
+    let value = input.value;
+
+    alert(perimetro_cuadrado(value));
+
+}
+
+function calcularAreaCuadrado()
+{
+    let input = document.getElementById("input-cuadrado");
+    let value = input.value;
+
+    alert(area_cuadrado(value));
+}
